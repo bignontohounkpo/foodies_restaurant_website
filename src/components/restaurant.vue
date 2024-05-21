@@ -1,68 +1,59 @@
 <template>
   <!-- nav -->
   <div class="shadow-lg">
-    <div class=" ">
-      <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="home">home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="About us">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="Our Gallary"> Gallary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="Our Menu"> Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="Our Review">Review</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bolder" href="Our Oder"> Oder</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fas fa-shopping-cart"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class=" container ">
+      <nav class="navbar navbar-expand-lg  bg-light  fixed-top ">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="home">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="About us">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="Our Gallary">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="Our Menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="Our Review">Review</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bolder" href="Our Oder">Oder</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
     </div>
   </div>
 
   <br /><br /><br />
   <!-- home -->
 
-  <div class="container pt-5">
-    <div class="row justify-content-between">
-      <div class="col-lg-5 col-sm-12 col-12">
-        <p class="fw-bold display-6">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-5 col-sm-12 col-12 mt-3">
+        <p class="fw-bold display-6 text-center text-lg-start">
           Get Fresh <span class="text-warning">food </span> In a <br />
           easy way
         </p>
@@ -77,8 +68,8 @@
           <button class="btn btn-warning btn-lg rounded-4">order new</button>
         </p>
       </div>
-      <div  class="col-lg-4 col-sm-12 col-12 ">
-        <img src="../assets/images/burger.png" alt="" class="img-fluid " />
+      <div class="col-lg-6 col-sm-12 col-12 order-first order-lg-last">
+        <img src="../assets/images/burger.png" alt="" class="img-fluid" />
       </div>
     </div>
   </div>
@@ -171,7 +162,7 @@
   </div>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-3 pt-5 ps-2">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5 ps-2">
         <img
           src="../assets/images/burger (1).png"
           alt=""
@@ -194,7 +185,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/pasta.jpg"
           alt=""
@@ -217,7 +208,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/lasagna.jpg"
           alt=""
@@ -242,7 +233,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/drink.jpg"
           alt=""
@@ -265,7 +256,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/pizza (1).jpg"
           alt=""
@@ -288,7 +279,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/hotdog.jpg"
           alt=""
@@ -312,7 +303,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/juse.jpg"
           alt=""
@@ -335,7 +326,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/biryani.jpg"
           alt=""
@@ -358,7 +349,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/chocolate.jpg"
           alt=""
@@ -381,7 +372,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/icecream.jpg"
           alt=""
@@ -404,7 +395,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/spanchi.jpg"
           alt=""
@@ -427,7 +418,7 @@
           <button class="btn btn-dark rounded-3 hove">order new</button>
         </div>
       </div>
-      <div class="col-lg-3 pt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
         <img
           src="../assets/images/sandwich (1).jpg"
           alt=""
@@ -563,23 +554,23 @@
   </div>
 
   <!-- our order -->
-  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5 ">
+  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Order</p>
   </div>
   <div class="forme">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
+      <div class="row align-items-center pb-4">
+        <div class="col-lg-6 col-md-6">
           <img
             src="../assets/images/service.png"
             alt=""
             class="img-fluid w-75"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <form
                 action="https://example.com/page-inexistante.html"
                 method="get"
@@ -614,7 +605,7 @@
               </form>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <form
                 action="https://example.com/page-inexistante.html"
                 method="get"
@@ -657,7 +648,7 @@
     </div>
   </div>
   <!-- our team -->
-  <div class="acteur pb-5 ">
+  <!-- <div class="acteur pb-5 ">
     <div class="container fs-2 justify-content-center d-flex gap-2 pt-5 ">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Team</p>
@@ -681,15 +672,14 @@
     </div>
     </div>
   </div>
-  </div>
-
+  </div> -->
 
   <!-- footer -->
-  <div class="bg-warning pt-5 ">
-    <div class="container ">
-      <div class="row justify-content-center ">
-        <div class="col-lg-2 col-md-6 ">
-          <p class="fs-3 fw-bolder ">Location </p>
+  <div class="bg-warning pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-6">
+          <p class="fs-3 fw-bolder">Location</p>
           <p class="fs-6">Sri lanka</p>
           <p class="fs-6">USA</p>
           <p class="fs-6">India</p>
@@ -697,30 +687,34 @@
           <p class="fs-6">Italy</p>
         </div>
         <div class="col-lg-2 col-md-6">
-          <p class="fs-3 fw-bolder ">Quick Link </p>
+          <p class="fs-3 fw-bolder">Quick Link</p>
           <p class="fs-6">Home</p>
           <p class="fs-6">About</p>
           <p class="fs-6">Menu</p>
           <p class="fs-6">Gallary</p>
           <p class="fs-6">Order</p>
         </div>
-        <div class="col-lg-3 col-md-6 ">
-          <p class="fs-3 fw-bolder ">Contact </p>
-          <p class="fs-6"> <a href="" class="text-dark">+94 13 3456 789 </a></p>
+        <div class="col-lg-3 col-md-6">
+          <p class="fs-3 fw-bolder">Contact</p>
+          <p class="fs-6"><a href="" class="text-dark">+94 13 3456 789 </a></p>
           <p class="fs-6"><a href="" class="text-dark"> +94 25 558858 </a></p>
-          <p class="fs-6">  <a href="" class="text-dark"> johndoe@123gamil.com </a></p>
-          <p class="fs-6"><a href="" class="text-dark"> foodshop@gmail.com </a></p>
+          <p class="fs-6">
+            <a href="" class="text-dark"> johndoe@123gamil.com </a>
+          </p>
+          <p class="fs-6">
+            <a href="" class="text-dark"> foodshop@gmail.com </a>
+          </p>
         </div>
-        <div class="col-lg-3 col-md-6 ">
-          <p class="fs-3 fw-bolder ">Our Services </p>
+        <div class="col-lg-3 col-md-6">
+          <p class="fs-3 fw-bolder">Our Services</p>
           <p class="fs-6">Fats delivey</p>
           <p class="fs-6">Easy Payement</p>
           <p class="fs-6">24*7 Service</p>
         </div>
         <div class="col-lg-2 col-md-6">
-          <p class="fs-3 fw-bolder ">Follows</p>
+          <p class="fs-3 fw-bolder">Follows</p>
           <p class="fs-6">Fats delivey</p>
-          <p class="d-flex gap-2 ">
+          <p class="d-flex gap-2">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
@@ -736,7 +730,7 @@
 //import BDD from "./BDD.js"
 export default {
   name: "",
- 
+
   components: {},
   //     setup(){
   //      class restaurant{
@@ -752,9 +746,7 @@ export default {
   //      for(const restaurant of BDD)
   // }
   //     }
- 
 };
-
 </script>
 
 
@@ -781,10 +773,9 @@ export default {
   background-image: url(../assets/images/background.jpeg);
 }
 .imge {
-  border-radius:50%; /* arrondir les coins de l'image et des bordures */
+  border-radius: 50%; /* arrondir les coins de l'image et des bordures */
   border: 10px solid #dddada; /* bordure extérieure */
-  box-shadow: 0 0 0 5px  #d8cece; /* bordure intérieure */
+  box-shadow: 0 0 0 5px #d8cece; /* bordure intérieure */
   outline: 5px solid #ffffff; /* bordure intérieure */
 }
-
 </style>
