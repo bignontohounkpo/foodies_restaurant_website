@@ -778,4 +778,5 @@ export default {
   box-shadow: 0 0 0 5px #d8cece; /* bordure intérieure */
   outline: 5px solid #ffffff; /* bordure intérieure */
 }
+
 </style>
