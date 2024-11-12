@@ -1,56 +1,63 @@
 <template>
   <!-- nav -->
   <div class="shadow-lg">
-    <div class=" container ">
-      <nav class="navbar navbar-expand-lg  bg-light  fixed-top ">
-  <a class="navbar-brand" href="#">
-    <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="home">home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="About us">About us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="Our Gallary">Gallary</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="Our Menu">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="Our Review">Review</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-bolder" href="Our Oder">Oder</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-      </li>
-    </ul>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top p-3 ">
+      <div class="d-flex align-items-center  w-100">
+        <!-- Logo -->
+        <a class="navbar-brand me-auto" href="#">
+          <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Icons aligned horizontally (hidden on smaller screens) -->
+
+      </div> 
+
+      <!-- Collapsible Menu (centered) -->
+      <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="About us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="Our Gallary">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="Our Menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="Our Review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="Our Order">Order</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-flex align-items-center gap-3">
+          <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
   </div>
-</nav>
-    </div>
-  </div>
+</div>
+
+
+
 
   <br /><br /><br />
   <!-- home -->
 
-  <div class="container">
+  <div class="container pt-5">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5 col-sm-12 col-12 mt-3">
         <p class="fw-bold display-6 text-center text-lg-start">
@@ -648,31 +655,42 @@
     </div>
   </div>
   <!-- our team -->
-  <!-- <div class="acteur pb-5 ">
-    <div class="container fs-2 justify-content-center d-flex gap-2 pt-5 ">
+  <div class="acteur pb-5">
+  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Team</p>
   </div>
-  <div class="container ">
+
+  <div class="container">
     <div class="row">
-    <div class="col-lg-3 ">
-      <img src="../assets/images/cuisto1.jpg" alt="" class="img-fluid  w-50 imge rounded-circle"  title="Texte au survol de l'image " style="border-radius: 100%">
-     
-    </div>
-    <div class="col-lg-3 ">
-      <img src="../assets/images/cuisto2.jpg" alt="" class="img-fluid  w-75 imge rounded-circle "  title="Texte au survol de l'image">
-    </div>
-    <div class="col-lg-3 ">
-      <img src="../assets/images/cuisto3.jpg" alt="" class="img-fluid  w-75 imge rounded-circle"  title="Texte au survol de l'image">
-     
-    </div>
-    <div class="col-lg-3 ">
-      <img src="../assets/images/cuisto4.jpg" alt="" class="img-fluid  w-75 imge rounded-circle"  title="Texte au survol de l'image">
-     
-    </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+        <img src="../assets/images/cuisto1.jpg" alt="Chef 1" 
+             class="img-fluid rounded-circle" 
+             title="Chef 1" 
+             style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+        <img src="../assets/images/cuisto2.jpg" alt="Chef 2" 
+             class="img-fluid rounded-circle" 
+             title="Chef 2" 
+             style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+        <img src="../assets/images/cuisto3.jpg" alt="Chef 3" 
+             class="img-fluid rounded-circle" 
+             title="Chef 3" 
+             style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+        <img src="../assets/images/cuisto4.jpg" alt="Chef 4" 
+             class="img-fluid rounded-circle" 
+             title="Chef 4" 
+             style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
     </div>
   </div>
-  </div> -->
+</div>
+
 
   <!-- footer -->
   <div class="bg-warning pt-5">
