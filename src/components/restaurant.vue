@@ -527,21 +527,70 @@
     <div class="container">
       <div class="row">
         <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../assets/images/cuisto1.jpg" alt="Chef 1" class="img-fluid rounded-circle" title="Chef 1"
-            style="width: 150px; height: 150px; object-fit: cover;">
+  <div class="outer-circle">
+    <div class="inner-circle">
+      <img src="../assets/images/cuisto1.jpg" alt="Chef 1" class="img-fluid profile-image" title="Chef 1">
+      <div class="overlay">
+        <h5 class="text-white">Chef</h5>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../assets/images/cuisto2.jpg" alt="Chef 2" class="img-fluid rounded-circle" title="Chef 2"
-            style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+  <div class="outer-circle">
+    <div class="inner-circle">
+      <img src="../assets/images/cuisto2.jpg" alt="Chef 1" class="img-fluid profile-image" title="Chef 1">
+      <div class="overlay">
+        <h5 class="text-white">Chef</h5>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../assets/images/cuisto3.jpg" alt="Chef 3"  class="img-fluid rounded-circle" title="Chef 3"
-            style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+  <div class="outer-circle">
+    <div class="inner-circle">
+      <img src="../assets/images/cuisto3.jpg" alt="Chef 3" class="img-fluid profile-image" title="Chef 1">
+      <div class="overlay">
+        <h5 class="text-white">Chef</h5>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../assets/images/cuisto4.jpg" alt="Chef 4" class="img-fluid rounded-circle" title="Chef 4"
-            style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+  <div class="outer-circle">
+    <div class="inner-circle">
+      <img src="../assets/images/cuisto4.jpg" alt="Chef 1" class="img-fluid profile-image" title="Chef 1">
+      <div class="overlay">
+        <h5 class="text-white">Chef</h5>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   </div>
@@ -629,6 +678,66 @@ export default {
 #app {
   font-family: "Plus jakarta Sans";
 }
+.outer-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #ccc; /* Couleur du cercle externe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #ccc; /* Couleur du cercle interne */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h5, .overlay p {
+  margin: 0;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+}
+
+.inner-circle:hover .profile-image {
+  opacity: 0;
+}
+
+.inner-circle:hover .overlay {
+  opacity: 1;
+}
+
 
 .hov:hover {
   transform: scale(1.05);
