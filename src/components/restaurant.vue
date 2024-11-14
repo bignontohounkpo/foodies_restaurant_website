@@ -535,7 +535,7 @@
             style="width: 150px; height: 150px; object-fit: cover;">
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../assets/images/cuisto3.jpg" alt="Chef 3" class="img-fluid rounded-circle" title="Chef 3"
+          <img src="../assets/images/cuisto3.jpg" alt="Chef 3"  class="img-fluid rounded-circle" title="Chef 3"
             style="width: 150px; height: 150px; object-fit: cover;">
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
