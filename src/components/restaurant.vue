@@ -1,55 +1,57 @@
 <template>
   <!-- nav -->
   <div class="shadow-lg">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top p-3 ">
-      <div class="d-flex align-items-center  w-100">
-        <!-- Logo -->
-        <a class="navbar-brand me-auto" href="#">
-          <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
-        </a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top p-3">
+        <div class="d-flex align-items-center ">
+          <!-- Logo (left) -->
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
+          </a>
 
-        <!-- Toggle Button -->
-        <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- Toggle Button (aligned to the right on smaller screens) -->
+          <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
-        <!-- Icons aligned horizontally (hidden on smaller screens) -->
+        <!-- Collapsible Menu (centered on large screens) -->
+        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
+          <ul class="navbar-nav text-center mx-auto">
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#home">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#about">About Us</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#gallery">Gallery</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#menu">Menu</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#review">Review</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fw-bolder" to="#order">Order</router-link>
+            </li>
+          </ul>
+        </div>
 
-      </div> 
-
-      <!-- Collapsible Menu (centered) -->
-      <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="About us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="Our Gallary">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="Our Menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="Our Review">Review</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bolder" href="Our Order">Order</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-none d-lg-flex align-items-center gap-3">
+        <!-- Icons aligned to the right (hidden on smaller screens) -->
+        <div class="d-none d-lg-flex align-items-center gap-3 ms-auto">
           <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
           <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
           <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
         </div>
-    </nav>
+      </nav>
+    </div>
   </div>
-</div>
+
+
+
 
 
 
@@ -57,7 +59,7 @@
   <br /><br /><br />
   <!-- home -->
 
-  <div class="container pt-5">
+  <div id="home" class="container pt-5">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5 col-sm-12 col-12 mt-3">
         <p class="fw-bold display-6 text-center text-lg-start">
@@ -82,18 +84,15 @@
   </div>
   <!-- About US -->
   <br /><br /><br /><br />
-  <div class="container">
-    <div
-      class="row justify-content-between jjustify-content-center"
-      style="max-width: 100%"
-    >
+  <div id="about"class="container">
+    <div class="row justify-content-between jjustify-content-center" style="max-width: 100%">
       <div class="col-lg-5 col-sm-12 col-12">
         <img src="../assets/images/about-us.png" alt="" class="img-fluid" />
       </div>
       <div class="col-lg-6 col-sm-12 col-12">
-        <div class="d-flex fw-bold fs-1 fw-bold gap-2">
-          <p class="text-warning">About</p>
-          <p class=" ">Us</p>
+        <div  id="about" class="container fs-2 justify-content-center d-flex gap-3">
+          <p class="fw-bold">About </p>
+          <p class="text-warning fw-bold text-decoration-underline">Us</p>
         </div>
         <div>
           <p class="">Why choose us ?</p>
@@ -112,69 +111,41 @@
     </div>
   </div>
   <!-- notre galerie -->
-  <div class="container fs-2 justify-content-center d-flex gap-3">
+  <div   id="gallery" class="container fs-2 justify-content-center d-flex gap-3">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Gallary</p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 mt-2 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/sandwich.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov"
-        />
+        <img src="../assets/images/sandwich.jpg" alt="" class="img-fluid rounded-3 hov" />
       </div>
       <div class="col-lg-4 mt-2 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/cupcake-myrtille.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov"
-        />
+        <img src="../assets/images/cupcake-myrtille.jpg" alt="" class="img-fluid rounded-3 hov" />
       </div>
       <div class="col-lg-4 mt-2 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/cupcake-chocolat.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov"
-        />
+        <img src="../assets/images/cupcake-chocolat.jpg" alt="" class="img-fluid rounded-3 hov" />
       </div>
       <div class="col-lg-4 mt-2 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/gateau-myrtille.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov"
-        />
+        <img src="../assets/images/gateau-myrtille.jpg" alt="" class="img-fluid rounded-3 hov" />
       </div>
       <div class="col-lg-4 mt-2 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/pizza.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov w-100"
-        />
+        <img src="../assets/images/pizza.jpg" alt="" class="img-fluid rounded-3 hov w-100" />
       </div>
       <div class="col-lg-4 mt-3 col-md-5 col-sm-6 col-6">
-        <img
-          src="../assets/images/gateauchocolat.jpg"
-          alt=""
-          class="img-fluid rounded-3 hov"
-        />
+        <img src="../assets/images/gateauchocolat.jpg" alt="" class="img-fluid rounded-3 hov" />
       </div>
     </div>
   </div>
   <!--  our menu  -->
-  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
+  <div id="menu" class="container fs-2 justify-content-center d-flex gap-2 pt-5">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Menu</p>
   </div>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5 ps-2">
-        <img
-          src="../assets/images/burger (1).png"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/burger (1).png" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">burger</p>
           <p class="">
@@ -193,11 +164,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/pasta.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/pasta.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">pasta</p>
           <p class="">
@@ -216,11 +183,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/lasagna.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/lasagna.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Lasagna</p>
           <p class="">
@@ -241,11 +204,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/drink.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/drink.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">drink</p>
           <p class="">
@@ -264,11 +223,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/pizza (1).jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/pizza (1).jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">pizza</p>
           <p class="">
@@ -287,11 +242,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/hotdog.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/hotdog.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Hotdog</p>
           <p class="">
@@ -311,11 +262,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/juse.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/juse.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Juse</p>
           <p class="">
@@ -334,11 +281,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/biryani.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/biryani.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Biryani</p>
           <p class="">
@@ -357,11 +300,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/chocolate.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/chocolate.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Chocolate</p>
           <p class="">
@@ -380,11 +319,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/icecream.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/icecream.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Ice Cream</p>
           <p class="">
@@ -403,11 +338,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/spanchi.jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/spanchi.jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Spanchi</p>
           <p class="">
@@ -426,11 +357,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 col-8 pt-5">
-        <img
-          src="../assets/images/sandwich (1).jpg"
-          alt=""
-          class="img-fluid hove rounded-2"
-        />
+        <img src="../assets/images/sandwich (1).jpg" alt="" class="img-fluid hove rounded-2" />
         <div class="text-center">
           <p class="text-warning pt-2">Sandwich</p>
           <p class="">
@@ -452,7 +379,7 @@
   </div>
 
   <!-- our review -->
-  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
+  <div id="review" class="container fs-2 justify-content-center d-flex gap-2 pt-5">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Review</p>
   </div>
@@ -460,11 +387,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-3 col-md-6 col-sm-6 pt-4">
         <div class="p-3 shadow-lg text-center">
-          <img
-            src="../assets/images/custumer1.jpg"
-            alt=""
-            class="img-fluid rounded-circle w-50 pt-2"
-          />
+          <img src="../assets/images/custumer1.jpg" alt="" class="img-fluid rounded-circle w-50 pt-2" />
           <p class="text-warning pt-2">Jane LeBron</p>
           <p class="text-warning d-flex justify-content-center gap-2">
             <i class="fas fa-star"></i>
@@ -485,11 +408,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6 pt-4">
         <div class="p-3 shadow-lg text-center">
-          <img
-            src="../assets/images/custumer2.jpg"
-            alt=""
-            class="img-fluid rounded-circle w-50 pt-2"
-          />
+          <img src="../assets/images/custumer2.jpg" alt="" class="img-fluid rounded-circle w-50 pt-2" />
           <p class="text-warning pt-2">John Doe</p>
           <p class="text-warning d-flex justify-content-center gap-2">
             <i class="fas fa-star"></i>
@@ -510,11 +429,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6 pt-4">
         <div class="p-3 shadow-lg text-center">
-          <img
-            src="../assets/images/custumer3.jpg"
-            alt=""
-            class="img-fluid rounded-circle w-50 pt-2"
-          />
+          <img src="../assets/images/custumer3.jpg" alt="" class="img-fluid rounded-circle w-50 pt-2" />
           <p class="text-warning pt-2">Cecile Laure</p>
           <p class="text-warning d-flex justify-content-center gap-2">
             <i class="fas fa-star"></i>
@@ -535,11 +450,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6 pt-4">
         <div class="p-3 shadow-lg text-center">
-          <img
-            src="../assets/images/custumer4.jpg"
-            alt=""
-            class="img-fluid rounded-circle w-50 pt-2"
-          />
+          <img src="../assets/images/custumer4.jpg" alt="" class="img-fluid rounded-circle w-50 pt-2" />
           <p class="text-warning pt-2">Kevin Carl</p>
           <p class="text-warning d-flex justify-content-center gap-2">
             <i class="fas fa-star"></i>
@@ -561,7 +472,7 @@
   </div>
 
   <!-- our order -->
-  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
+  <div id="order" class="container fs-2 justify-content-center d-flex gap-2 pt-5">
     <p class="fw-bold">Our</p>
     <p class="text-warning fw-bold text-decoration-underline">Order</p>
   </div>
@@ -569,127 +480,71 @@
     <div class="container">
       <div class="row align-items-center pb-4">
         <div class="col-lg-6 col-md-6">
-          <img
-            src="../assets/images/service.png"
-            alt=""
-            class="img-fluid w-75"
-          />
+          <img src="../assets/images/service.png" alt="" class="img-fluid w-75" />
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="row">
             <div class="col-lg-6 col-md-6">
-              <form
-                action="https://example.com/page-inexistante.html"
-                method="get"
-              >
+              <form action="https://example.com/page-inexistante.html" method="get">
                 <label for="nom" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control mb-3 rounded-3"
-                  id="nom"
-                  name="nom"
-                  required
-                  placeholder="Name"
-                />
+                <input type="text" class="form-control mb-3 rounded-3" id="nom" name="nom" required
+                  placeholder="Name" />
                 <label for="numero" class="form-label">Number</label>
-                <input
-                  type="tel"
-                  class="form-control mb-3 rounded-3"
-                  id="numero"
-                  name="numero"
-                  required
-                  placeholder="Number"
-                />
+                <input type="tel" class="form-control mb-3 rounded-3" id="numero" name="numero" required
+                  placeholder="Number" />
                 <label for="message" class="form-label">Order</label>
-                <input
-                  class="form-control mb-3 rounded-3"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                  placeholder="order"
-                />
+                <input class="form-control mb-3 rounded-3" id="message" name="message" rows="5" required
+                  placeholder="order" />
               </form>
             </div>
 
             <div class="col-lg-6 col-md-6">
-              <form
-                action="https://example.com/page-inexistante.html"
-                method="get"
-              >
+              <form action="https://example.com/page-inexistante.html" method="get">
                 <label for="nom" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control mb-3 rounded-3"
-                  id="nom"
-                  name="nom"
-                  required
-                  placeholder="Email"
-                />
+                <input type="email" class="form-control mb-3 rounded-3" id="nom" name="nom" required
+                  placeholder="Email" />
                 <label for="numero" class="form-label">How much</label>
-                <input
-                  type="tel"
-                  class="form-control mb-3 rounded-3"
-                  id="numero"
-                  name="numero"
-                  required
-                  placeholder="How much"
-                />
+                <input type="tel" class="form-control mb-3 rounded-3" id="numero" name="numero" required
+                  placeholder="How much" />
                 <label for="message" class="form-label">Adress</label>
-                <input
-                  class="form-control mb-3 rounded-3"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                  placeholder="Adress"
-                />
+                <input class="form-control mb-3 rounded-3" id="message" name="message" rows="5" required
+                  placeholder="Adress" />
               </form>
             </div>
           </div>
-          <a
-            ><button type="submit" class="btn btn-warning">Order New</button></a
-          >
+          <a><button type="submit" class="btn btn-warning">Order New</button></a>
         </div>
       </div>
     </div>
   </div>
   <!-- our team -->
   <div class="acteur pb-5">
-  <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
-    <p class="fw-bold">Our</p>
-    <p class="text-warning fw-bold text-decoration-underline">Team</p>
-  </div>
+    <div class="container fs-2 justify-content-center d-flex gap-2 pt-5">
+      <p class="fw-bold">Our</p>
+      <p class="text-warning fw-bold text-decoration-underline">Team</p>
+    </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-        <img src="../assets/images/cuisto1.jpg" alt="Chef 1" 
-             class="img-fluid rounded-circle" 
-             title="Chef 1" 
-             style="width: 150px; height: 150px; object-fit: cover;">
-      </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-        <img src="../assets/images/cuisto2.jpg" alt="Chef 2" 
-             class="img-fluid rounded-circle" 
-             title="Chef 2" 
-             style="width: 150px; height: 150px; object-fit: cover;">
-      </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-        <img src="../assets/images/cuisto3.jpg" alt="Chef 3" 
-             class="img-fluid rounded-circle" 
-             title="Chef 3" 
-             style="width: 150px; height: 150px; object-fit: cover;">
-      </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-        <img src="../assets/images/cuisto4.jpg" alt="Chef 4" 
-             class="img-fluid rounded-circle" 
-             title="Chef 4" 
-             style="width: 150px; height: 150px; object-fit: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+          <img src="../assets/images/cuisto1.jpg" alt="Chef 1" class="img-fluid rounded-circle" title="Chef 1"
+            style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+          <img src="../assets/images/cuisto2.jpg" alt="Chef 2" class="img-fluid rounded-circle" title="Chef 2"
+            style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+          <img src="../assets/images/cuisto3.jpg" alt="Chef 3" class="img-fluid rounded-circle" title="Chef 3"
+            style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+          <img src="../assets/images/cuisto4.jpg" alt="Chef 4" class="img-fluid rounded-circle" title="Chef 4"
+            style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- footer -->
@@ -784,17 +639,23 @@ export default {
   transform: scale(1.04);
   /* box-shadow: 0 10px 20px rgba(102, 67, 67, 0.2); */
 }
+
 .forme {
   background-image: url(../assets/images/background-burger.jpeg);
 }
+
 .acteur {
   background-image: url(../assets/images/background.jpeg);
 }
-.imge {
-  border-radius: 50%; /* arrondir les coins de l'image et des bordures */
-  border: 10px solid #dddada; /* bordure extérieure */
-  box-shadow: 0 0 0 5px #d8cece; /* bordure intérieure */
-  outline: 5px solid #ffffff; /* bordure intérieure */
-}
 
+.imge {
+  border-radius: 50%;
+  /* arrondir les coins de l'image et des bordures */
+  border: 10px solid #dddada;
+  /* bordure extérieure */
+  box-shadow: 0 0 0 5px #d8cece;
+  /* bordure intérieure */
+  outline: 5px solid #ffffff;
+  /* bordure intérieure */
+}
 </style>
