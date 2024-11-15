@@ -1,54 +1,53 @@
 <template>
   <!-- nav -->
-  <div class="shadow-lg">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-light fixed-top p-3">
-        <div class="d-flex align-items-center ">
-          <!-- Logo (left) -->
-          <a class="navbar-brand" href="#">
-            <img src="../assets/images/logo-FOOD.png" alt="Logo" class="w-25" />
-          </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Logo (centered) -->
+    <a class="navbar-brand " href="#">
+      <img src="../assets/images/logo-FOOD.png" alt="Logo" width="100">
+    </a>
 
-          <!-- Toggle Button (aligned to the right on smaller screens) -->
-          <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+    <!-- Toggle Button (aligned to the left on smaller screens) -->
+    <div class="order-lg-last last">
+      <button class="navbar-toggler border-0 me-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-        <!-- Collapsible Menu (centered on large screens) -->
-        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
-          <ul class="navbar-nav text-center mx-auto">
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#home">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#about">About Us</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#gallery">Gallery</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#menu">Menu</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#review">Review</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link fw-bolder" to="#order">Order</router-link>
-            </li>
-          </ul>
-        </div>
+    <!-- Collapsible Menu (centered on large screens) -->
+    <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
+      <ul class="navbar-nav text-center mx-auto">
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#home">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#about">About Us</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#gallery">Gallery</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#menu">Menu</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#review">Review</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link fw-bolder" to="#order">Order</router-link>
+        </li>
+      </ul>
+    </div>
 
-        <!-- Icons aligned to the right (hidden on smaller screens) -->
-        <div class="d-none d-lg-flex align-items-center gap-3 ms-auto">
-          <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
-          <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-      </nav>
+    <!-- Icons aligned to the right (hidden on smaller screens) -->
+    <div class="d-none d-lg-flex align-items-center gap-3 ms-auto">
+      <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+      <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+      <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
   </div>
+</nav>
+
 
 
 
