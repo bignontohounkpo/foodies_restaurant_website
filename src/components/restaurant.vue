@@ -1,7 +1,8 @@
 <template>
   <!-- nav -->
+   <div class="pb-4">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid mx-2">
     <!-- Logo (centered) -->
     <a class="navbar-brand " href="#">
       <img src="../assets/images/logo-FOOD.png" alt="Logo" width="100">
@@ -47,15 +48,8 @@
     </div>
   </div>
 </nav>
+</div>
 
-
-
-
-
-
-
-
-  <br /><br /><br />
   <!-- home -->
 
   <div id="home" class="container pt-5">
